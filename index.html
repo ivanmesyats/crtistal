@@ -211,6 +211,7 @@
       border-radius: 32px;
       padding: 36px;
       box-shadow: 0 24px 80px rgba(18, 53, 31, 0.12);
+      overflow: hidden;
     }
 
     .gallery-header {
@@ -228,31 +229,51 @@
       line-height: 1.5;
     }
 
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
+    .gallery-scroll {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 4px 4px 18px;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .gallery-scroll::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    .gallery-scroll::-webkit-scrollbar-track {
+      background: #edf1e6;
+      border-radius: 999px;
+    }
+
+    .gallery-scroll::-webkit-scrollbar-thumb {
+      background: #1f6b3a;
+      border-radius: 999px;
     }
 
     .photo {
-      min-height: 210px;
-      border-radius: 22px;
+      flex: 0 0 78%;
+      max-width: 520px;
+      min-width: 280px;
+      height: 330px;
+      border-radius: 24px;
       overflow: hidden;
       background: linear-gradient(135deg, #12351f, #1f6b3a);
       position: relative;
+      scroll-snap-align: start;
+      box-shadow: 0 16px 35px rgba(18, 53, 31, .16);
     }
 
     .photo img {
       width: 100%;
       height: 100%;
-      min-height: 210px;
       object-fit: cover;
       display: block;
     }
 
     .placeholder {
       height: 100%;
-      min-height: 210px;
       display: grid;
       place-items: center;
       padding: 20px;
@@ -269,8 +290,12 @@
       .page { padding: 14px; }
       .card { grid-template-columns: 1fr; }
       .hero, .info, .gallery-section { padding: 30px; }
-      .features, .gallery { grid-template-columns: 1fr; }
+      .features { grid-template-columns: 1fr; }
       .gallery-header { display: block; }
+      .photo {
+        flex-basis: 86%;
+        height: 260px;
+      }
     }
   </style>
 </head>
@@ -326,10 +351,10 @@
             <p class="badge">Галерея</p>
             <h2>Фото з тренувань</h2>
           </div>
-          <p>Додайте свої фотографії в папку <b>images</b> і замініть назви файлів у коді: photo1.jpg, photo2.jpg, photo3.jpg.</p>
+          <p>Гортайте фото горизонтально. Додайте свої фото в папку <b>images</b>: photo1.jpg, photo2.jpg, photo3.jpg і далі.</p>
         </div>
 
-        <div class="gallery">
+        <div class="gallery-scroll">
           <div class="photo">
             <img src="images/photo1.jpg" alt="CRYSTAL UNITED тренування" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
             <div class="placeholder" style="display:none;">Фото 1<br>images/photo1.jpg</div>
@@ -343,6 +368,16 @@
           <div class="photo">
             <img src="images/photo3.jpg" alt="CRYSTAL UNITED матч" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
             <div class="placeholder" style="display:none;">Фото 3<br>images/photo3.jpg</div>
+          </div>
+
+          <div class="photo">
+            <img src="images/photo4.jpg" alt="CRYSTAL UNITED футбол" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <div class="placeholder" style="display:none;">Фото 4<br>images/photo4.jpg</div>
+          </div>
+
+          <div class="photo">
+            <img src="images/photo5.jpg" alt="CRYSTAL UNITED діти" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <div class="placeholder" style="display:none;">Фото 5<br>images/photo5.jpg</div>
           </div>
         </div>
       </section>
