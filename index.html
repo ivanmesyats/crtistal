@@ -17,14 +17,15 @@
     .page {
       min-height: 100vh;
       padding: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
     }
 
     .card {
-      width: 100%;
-      max-width: 1100px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       background: white;
@@ -204,58 +205,148 @@
       line-height: 1.4;
     }
 
+    .gallery-section {
+      margin-top: 28px;
+      background: white;
+      border-radius: 32px;
+      padding: 36px;
+      box-shadow: 0 24px 80px rgba(18, 53, 31, 0.12);
+    }
+
+    .gallery-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: end;
+      margin-bottom: 24px;
+    }
+
+    .gallery-header p {
+      max-width: 520px;
+      margin: 0;
+      color: #58625b;
+      line-height: 1.5;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .photo {
+      min-height: 210px;
+      border-radius: 22px;
+      overflow: hidden;
+      background: linear-gradient(135deg, #12351f, #1f6b3a);
+      position: relative;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      min-height: 210px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .placeholder {
+      height: 100%;
+      min-height: 210px;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      font-weight: 900;
+      background:
+        linear-gradient(rgba(18, 53, 31, .35), rgba(18, 53, 31, .35)),
+        radial-gradient(circle at top right, rgba(245, 214, 107, .45), transparent 38%),
+        linear-gradient(135deg, #12351f, #1f6b3a);
+    }
+
     @media (max-width: 850px) {
       .page { padding: 14px; }
       .card { grid-template-columns: 1fr; }
-      .hero, .info { padding: 30px; }
-      .features { grid-template-columns: 1fr; }
+      .hero, .info, .gallery-section { padding: 30px; }
+      .features, .gallery { grid-template-columns: 1fr; }
+      .gallery-header { display: block; }
     }
   </style>
 </head>
 <body>
   <main class="page">
-    <section class="card">
-      <div class="hero">
-        <div class="hero-content">
-          <div class="logo">⚽</div>
-          <p class="badge">Дитячий футбольний клуб</p>
-          <h1>CRYSTAL UNITED</h1>
-          <p class="free">Перше тренування — БЕЗКОШТОВНО!</p>
-          <p class="description">
-            Футбольні тренування для дітей від 5 до 12 років.
-            Розвиваємо техніку, дисципліну, командний дух і любов до гри.
-          </p>
+    <div class="container">
+      <section class="card">
+        <div class="hero">
+          <div class="hero-content">
+            <div class="logo">⚽</div>
+            <p class="badge">Дитячий футбольний клуб</p>
+            <h1>CRYSTAL UNITED</h1>
+            <p class="free">Перше тренування — БЕЗКОШТОВНО!</p>
+            <p class="description">
+              Футбольні тренування для дітей від 5 до 12 років.
+              Розвиваємо техніку, дисципліну, командний дух і любов до гри.
+            </p>
 
-          <div class="actions">
-            <a class="primary" href="tel:+380732791099">Подзвонити</a>
-            <a class="secondary" href="https://t.me/crystal_united" target="_blank">Записатися</a>
+            <div class="actions">
+              <a class="primary" href="tel:+380732791099">Подзвонити</a>
+              <a class="secondary" href="https://t.me/crystal_united" target="_blank">Записатися</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="info">
-        <h2>Про клуб</h2>
-        <p class="text">
-          CRYSTAL UNITED — дитячий футбольний клуб, де діти тренуються в дружній атмосфері
-          під керівництвом ліцензованого тренера.
-        </p>
+        <div class="info">
+          <h2>Про клуб</h2>
+          <p class="text">
+            CRYSTAL UNITED — дитячий футбольний клуб, де діти тренуються в дружній атмосфері
+            під керівництвом ліцензованого тренера.
+          </p>
 
-        <div class="features">
-          <div class="feature"><div class="icon">🏆</div><b>Чемпіонати</b><span>участь у турнірах</span></div>
-          <div class="feature"><div class="icon">⏱️</div><b>3 тренування</b><span>на тиждень</span></div>
-          <div class="feature"><div class="icon">🏕️</div><b>Збори</b><span>футбольні збори</span></div>
-          <div class="feature"><div class="icon">🎓</div><b>Тренер</b><span>ліцензований</span></div>
+          <div class="features">
+            <div class="feature"><div class="icon">🏆</div><b>Чемпіонати</b><span>участь у турнірах</span></div>
+            <div class="feature"><div class="icon">⏱️</div><b>3 тренування</b><span>на тиждень</span></div>
+            <div class="feature"><div class="icon">🏕️</div><b>Збори</b><span>футбольні збори</span></div>
+            <div class="feature"><div class="icon">🎓</div><b>Тренер</b><span>ліцензований</span></div>
+          </div>
+
+          <div class="contacts">
+            <h3>Запис за телефоном</h3>
+            <p>📞 +38 073 279 10 99, Дмитро</p>
+            <p>📍 Київ, Україна</p>
+            <p>📸 @crystal.united</p>
+            <p>💬 t.me/crystal_united</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <div class="gallery-header">
+          <div>
+            <p class="badge">Галерея</p>
+            <h2>Фото з тренувань</h2>
+          </div>
+          <p>Додайте свої фотографії в папку <b>images</b> і замініть назви файлів у коді: photo1.jpg, photo2.jpg, photo3.jpg.</p>
         </div>
 
-        <div class="contacts">
-          <h3>Запис за телефоном</h3>
-          <p>📞 +38 073 279 10 99, Дмитро</p>
-          <p>📍 Київ, Україна</p>
-          <p>📸 @crystal.united</p>
-          <p>💬 t.me/crystal_united</p>
+        <div class="gallery">
+          <div class="photo">
+            <img src="images/photo1.jpg" alt="CRYSTAL UNITED тренування" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <div class="placeholder" style="display:none;">Фото 1<br>images/photo1.jpg</div>
+          </div>
+
+          <div class="photo">
+            <img src="images/photo2.jpg" alt="CRYSTAL UNITED команда" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <div class="placeholder" style="display:none;">Фото 2<br>images/photo2.jpg</div>
+          </div>
+
+          <div class="photo">
+            <img src="images/photo3.jpg" alt="CRYSTAL UNITED матч" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <div class="placeholder" style="display:none;">Фото 3<br>images/photo3.jpg</div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </main>
 </body>
 </html>
