@@ -106,7 +106,7 @@ export default function BusinessCardWebsite() {
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <a
-            href="https://jaco.com.ua"
+            href="https://jakosport.com.ua/uk?srsltid=AfmBOora0krZLggsUJuZDvw2pCsIOQQ2m3nSa6VGrNZ4JLUSdJWztvmC"
             target="_blank"
             className="rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
           >
