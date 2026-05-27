@@ -256,18 +256,18 @@ h2 {
   min-width:220px;
 
 }
-
 .partners-logos img{
 
-  width:100%;
-
-  max-width:320px;
+  width:320px;
 
   height:110px;
 
   object-fit:contain;
 
+  display:block;
+
 }
+
 @media(max-width:900px){
 
   .partners-logos{
@@ -275,6 +275,8 @@ h2 {
     justify-content:center;
 
   }
+
+}
 
 .partners-logos img{
 
