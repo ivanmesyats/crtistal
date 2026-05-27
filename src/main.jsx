@@ -144,21 +144,31 @@ export default function BusinessCardWebsite() {
 
 </h3>
           </a>
-            <img
+            <a
 
-  src="/images/fanreko_logo.png"
+  href="https://fanreko.com"
 
-  className="w-[320px] h-[110px] object-contain mx-auto"
+  target="_blank"
 
-/>
+  className="w-[360px] rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
 
-<h3 className="mt-4 text-xl font-black text-center">
+>
 
-  FANREKO
+  <img
 
-</h3>
-          </a>
+    src="/images/fanreko_logo.png"
 
+    className="w-[320px] h-[110px] object-contain mx-auto"
+
+  />
+
+  <h3 className="mt-4 text-xl font-black text-center">
+
+    FANREKO
+
+  </h3>
+
+</a>
           <div className="rounded-2xl bg-[#f5f7ef] p-6">
             <div className="text-3xl">🏢</div>
             <h3 className="mt-4 text-xl font-black">МЕГАТЕХСЕРВІС</h3>
