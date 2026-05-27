@@ -128,7 +128,7 @@ export default function BusinessCardWebsite() {
           <a
             href="https://ksm-group.ua"
             target="_blank"
-            className="rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
+            className="w-[360px] rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
           >
             <img
 
