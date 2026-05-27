@@ -231,16 +231,13 @@ h2 {
   color:#173c24;
 
 }
-
 .partners-logos{
 
   display:flex;
 
+  gap:40px;
+
   align-items:center;
-
-  justify-content:space-between;
-
-  gap:60px;
 
   flex-wrap:wrap;
 
