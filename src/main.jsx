@@ -104,7 +104,7 @@ export default function BusinessCardWebsite() {
           Наші партнери
         </h2>
 
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 flex flex-wrap justify-center gap-8">
           <a
             href="https://jakosport.com.ua/uk?srsltid=AfmBOora0krZLggsUJuZDvw2pCsIOQQ2m3nSa6VGrNZ4JLUSdJWztvmC"
             target="_blank"
@@ -144,12 +144,6 @@ export default function BusinessCardWebsite() {
 
 </h3>
           </a>
-
-          <a
-            href="https://dus-level.com/about-us"
-            target="_blank"
-            className="rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
-          >
             <img
 
   src="/images/fanreko_logo.png"
