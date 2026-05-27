@@ -286,8 +286,11 @@ h2 {
   height:110px;
 
   object-fit:contain;
+    display:flex;
 
-  display:block;
+  align-items:center;
+
+  justify-content:center;
   }
 
 }
