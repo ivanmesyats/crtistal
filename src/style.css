@@ -235,9 +235,11 @@ h2 {
 
   display:flex;
 
-  gap:40px;
+  justify-content:center;
 
   align-items:center;
+
+  gap:32px;
 
   flex-wrap:wrap;
 
@@ -245,15 +247,17 @@ h2 {
 
 .partners-logos a{
 
-  flex:1;
+  width:320px !important;
+
+  height:110px !important;
+
+  overflow:hidden;
 
   display:flex;
 
-  justify-content:center;
-
   align-items:center;
 
-  min-width:220px;
+  justify-content:center;
 
 }
 .partners-logos img{
