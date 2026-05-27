@@ -278,11 +278,11 @@ h2 {
 
 .partners-logos img{
 
-  width:320px !important;
+  width:320px;
 
-  height:110px !important;
+  height:110px;
 
-  object-fit:contain !important;
+  object-fit:contain;
 
   display:block;
 
