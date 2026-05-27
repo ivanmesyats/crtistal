@@ -108,7 +108,7 @@ export default function BusinessCardWebsite() {
           <a
             href="https://jakosport.com.ua/uk?srsltid=AfmBOora0krZLggsUJuZDvw2pCsIOQQ2m3nSa6VGrNZ4JLUSdJWztvmC"
             target="_blank"
-            className="rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
+            className="w-[360px] rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
           >
             <img
 
