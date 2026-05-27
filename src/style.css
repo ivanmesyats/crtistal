@@ -314,3 +314,18 @@ h2 {
   object-fit: contain !important;
   display: block !important;
 }
+.partner-logo-small{
+
+  width:320px !important;
+
+  height:110px !important;
+
+  max-width:320px !important;
+
+  max-height:110px !important;
+
+  object-fit:contain !important;
+
+  display:block !important;
+
+}
