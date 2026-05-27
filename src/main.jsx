@@ -110,8 +110,19 @@ export default function BusinessCardWebsite() {
             target="_blank"
             className="rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
           >
-            <div className="text-3xl">🤝</div>
-            <h3 className="mt-4 text-xl font-black">JACO</h3>
+            <img
+
+  src="/images/jaco_logo.png"
+
+  className="w-[320px] h-[110px] object-contain mx-auto"
+
+/>
+
+<h3 className="mt-4 text-xl font-black text-center">
+
+  JAKO
+
+</h3>
           </a>
 
           <a
