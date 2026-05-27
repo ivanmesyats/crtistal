@@ -300,3 +300,13 @@ h2 {
     grid-template-columns: 1fr;
   }
 }
+.partners-strip .partners-logos a img,
+.partners-logos a img,
+.partners-logos img {
+  width: 320px !important;
+  max-width: 320px !important;
+  height: 110px !important;
+  max-height: 110px !important;
+  object-fit: contain !important;
+  display: block !important;
+}
