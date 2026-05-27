@@ -210,27 +210,25 @@ h2 {
 
 .partners-strip{
 
-  margin-top:28px;
+  margin-top:32px;
 
-  background:white;
+  background:#ffffff;
 
-  border-radius:34px;
+  border-radius:36px;
 
-  padding:42px;
-
-  box-shadow:0 24px 80px rgba(18,53,31,.10);
+  padding:42px 48px;
 
 }
 
 .partners-strip h3{
 
-  margin:0 0 28px;
+  margin:0 0 34px;
 
-  font-size:24px;
+  font-size:22px;
 
-  color:#58625b;
+  font-weight:800;
 
-  font-weight:900;
+  color:#173c24;
 
 }
 
@@ -242,17 +240,33 @@ h2 {
 
   justify-content:space-between;
 
-  gap:48px;
+  gap:60px;
 
   flex-wrap:wrap;
 
 }
 
+.partners-logos a{
+
+  flex:1;
+
+  display:flex;
+
+  justify-content:center;
+
+  align-items:center;
+
+  min-width:220px;
+
+}
+
 .partners-logos img{
 
-  max-height:82px;
+  width:100%;
 
-  max-width:260px;
+  max-width:320px;
+
+  height:110px;
 
   object-fit:contain;
 
