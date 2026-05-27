@@ -112,9 +112,6 @@ export default function BusinessCardWebsite() {
           >
             <div className="text-3xl">🤝</div>
             <h3 className="mt-4 text-xl font-black">JACO</h3>
-            <p className="mt-2 text-neutral-600">
-              Офіційний партнер клубу
-            </p>
           </a>
 
           <a
@@ -124,9 +121,6 @@ export default function BusinessCardWebsite() {
           >
             <div className="text-3xl">🏗️</div>
             <h3 className="mt-4 text-xl font-black">KSM GROUP</h3>
-            <p className="mt-2 text-neutral-600">
-              Будівельний та девелоперський партнер
-            </p>
           </a>
 
           <a
@@ -136,17 +130,11 @@ export default function BusinessCardWebsite() {
           >
             <div className="text-3xl">⚙️</div>
             <h3 className="mt-4 text-xl font-black">DUS LEVEL</h3>
-            <p className="mt-2 text-neutral-600">
-              Партнер та підтримка розвитку клубу
-            </p>
           </a>
 
           <div className="rounded-2xl bg-[#f5f7ef] p-6">
             <div className="text-3xl">🏢</div>
             <h3 className="mt-4 text-xl font-black">МЕГАТЕХСЕРВІС</h3>
-            <p className="mt-2 text-neutral-600">
-              Партнер дитячого футбольного клубу
-            </p>
           </div>
         </div>
       </section>
