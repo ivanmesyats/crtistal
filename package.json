@@ -1,13 +1,4 @@
 {
-
-  "scripts": {
-
-    "build": "vite build",
-
-    "start": "vite preview --host 0.0.0.0"
-
-  }
-
   "name": "crtistal",
   "private": true,
   "version": "1.0.0",
@@ -15,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "start": "vite preview --host 0.0.0.0",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -23,6 +15,5 @@
     "react": "latest",
     "react-dom": "latest",
     "lucide-react": "latest"
-  },
-  "devDependencies": {}
+  }
 }
