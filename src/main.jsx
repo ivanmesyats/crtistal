@@ -108,13 +108,13 @@ export default function BusinessCardWebsite() {
           <a
             href="https://jakosport.com.ua/uk?srsltid=AfmBOora0krZLggsUJuZDvw2pCsIOQQ2m3nSa6VGrNZ4JLUSdJWztvmC"
             target="_blank"
-            className="w-[360px] h-[220px] flex flex-col justify-center rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
+            className="w-[260px] h-[170px] flex flex-col justify-center rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
           >
             <img
 
   src="/images/jaco_logo.png"
 
-  className="w-[220px] h-[90px] object-contain mx-auto"
+  className="w-[180px] h-[70px] object-contain mx-auto"
 
 />
 
@@ -128,13 +128,13 @@ export default function BusinessCardWebsite() {
           <a
             href="https://ksm-group.ua"
             target="_blank"
-            className="w-[360px] h-[220px] flex flex-col justify-center rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
+            className="w-[260px] h-[170px] flex flex-col justify-center rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
           >
             <img
 
   src="/images/ksm_logo.png"
 
-  className="w-[220px] h-[90px] object-contain mx-auto"
+  className="w-[180px] h-[70px] object-contain mx-auto"
 
 />
 
@@ -150,7 +150,7 @@ export default function BusinessCardWebsite() {
 
   target="_blank"
 
-  className="w-[360px] h-[220px] flex flex-col justify-center rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
+  className="w-[260px] h-[170px] flex flex-col justify-center rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
 
 >
 
@@ -158,7 +158,7 @@ export default function BusinessCardWebsite() {
 
     src="/images/fanreko_logo.png"
 
-    className="w-[220px] h-[90px] object-contain mx-auto"
+    className="w-[180px] h-[70px] object-contain mx-auto"
 
   />
 
