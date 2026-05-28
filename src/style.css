@@ -361,17 +361,9 @@ h2 {
 
 @media(max-width:900px){
 
-  .hero-logo{
+  .partners-logos{
 
-    position:static;
-
-    transform:none;
-
-    margin-top:30px;
-
-    width:220px;
-
-    height:220px;
+    justify-content:center;
 
   }
 
