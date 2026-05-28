@@ -95,7 +95,7 @@ export default function BusinessCardWebsite() {
         </div>
       </section>
 
-      <section className="mx-auto mt-8 max-w-6xl rounded-[2rem] bg-white p-8 shadow-2xl md:p-12">
+      <section className="mx-auto mt-8 max-w-6xl rounded-[2rem] bg-white p-6 shadow-xl md:p-8">
         <p className="inline-block rounded-full bg-[#f5d66b] px-4 py-2 text-sm font-black uppercase tracking-wide text-[#12351f]">
           Партнери
         </p>
