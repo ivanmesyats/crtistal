@@ -28,13 +28,17 @@ body {
   box-shadow: 0 24px 80px rgba(18, 53, 31, 0.18);
 }
 
-.hero {
-  position: relative;
-  overflow: hidden;
-  min-height: 620px;
-  padding: 48px;
-  background: linear-gradient(135deg, #0f2f1b, #1f6b3a);
-  color: white;
+.hero{
+position:relative;
+overflow:hidden;
+min-height:620px;
+padding:48px;
+background:linear-gradient(135deg,#0f2f1b,#1f6b3a);
+color:white;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
 }
 
 .glow {
@@ -320,29 +324,6 @@ h2 {
 
   }
 
-  .hero {
-
-  position: relative;
-
-  overflow: hidden;
-
-  min-height: 520px;
-
-  padding: 48px;
-
-  background: linear-gradient(135deg, #0f2f1b, #1f6b3a);
-
-  color: white;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  gap: 40px;
-
-}
 
   .info {
 
