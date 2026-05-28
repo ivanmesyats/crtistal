@@ -216,13 +216,13 @@ h2 {
 
   border-radius:36px;
 
-  padding:42px 48px;
+  padding:32px 36px;
 
 }
 
 .partners-strip h3{
 
-  margin:0 0 34px;
+  margin:0 0 24px;
 
   font-size:22px;
 
@@ -231,6 +231,7 @@ h2 {
   color:#173c24;
 
 }
+
 .partners-logos{
 
   display:flex;
@@ -239,7 +240,7 @@ h2 {
 
   align-items:center;
 
-  gap:32px;
+  gap:28px;
 
   flex-wrap:wrap;
 
@@ -247,11 +248,9 @@ h2 {
 
 .partners-logos a{
 
-  width:320px !important;
+  width:220px;
 
-  height:110px !important;
-
-  overflow:hidden;
+  height:90px;
 
   display:flex;
 
@@ -260,73 +259,20 @@ h2 {
   justify-content:center;
 
 }
-.partners-logos img{
 
-  width:320px;
+.partner-logo-small{
 
-  height:110px;
+  max-width:170px;
+
+  max-height:55px;
+
+  width:auto;
+
+  height:auto;
 
   object-fit:contain;
 
   display:block;
-
-}
-
-@media(max-width:900px){
-
-  .partners-logos{
-
-    justify-content:center;
-
-  }
-
-}
-
-
-
-}
-
-@media (max-width: 850px) {
-  .page {
-    padding: 14px;
-  }
-
-  .card {
-    grid-template-columns: 1fr;
-  }
-
-  .hero, .info {
-    padding: 30px;
-    min-height: auto;
-  }
-
-  .features {
-    grid-template-columns: 1fr;
-  }
-}
-.partners-strip .partners-logos a img,
-.partners-logos a img,
-.partners-logos img {
-  width: 320px !important;
-  max-width: 320px !important;
-  height: 110px !important;
-  max-height: 110px !important;
-  object-fit: contain !important;
-  display: block !important;
-}
-.partner-logo-small{
-
-  width:320px !important;
-
-  height:110px !important;
-
-  max-width:320px !important;
-
-  max-height:110px !important;
-
-  object-fit:contain !important;
-
-  display:block !important;
 
 }
 .hero-logo{
