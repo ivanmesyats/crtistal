@@ -95,99 +95,69 @@ export default function BusinessCardWebsite() {
         </div>
       </section>
 
-      <section className="mx-auto mt-8 max-w-6xl rounded-[2rem] bg-white p-6 shadow-xl md:p-8">
-        <p className="inline-block rounded-full bg-[#f5d66b] px-4 py-2 text-sm font-black uppercase tracking-wide text-[#12351f]">
-          Партнери
-        </p>
+<section className="mx-auto mt-8 max-w-6xl rounded-[2rem] bg-white p-6 shadow-xl md:p-8">
 
-        <h2 className="mt-4 text-4xl font-black text-[#12351f]">
-          Наші партнери
-        </h2>
+  <p className="inline-block rounded-full bg-[#f5d66b] px-4 py-2 text-sm font-black uppercase tracking-wide text-[#12351f]">
 
-        <div className="mt-8 flex flex-wrap justify-center items-center gap-8">
-          <a
-            href="https://jakosport.com.ua/uk?srsltid=AfmBOora0krZLggsUJuZDvw2pCsIOQQ2m3nSa6VGrNZ4JLUSdJWztvmC"
-            target="_blank"
-            className="w-[260px] h-[170px] flex flex-col justify-center rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
-          >
-            <img
+    Партнери
 
-  src="/images/jaco_logo.png"
+  </p>
 
-  className="w-[180px] h-[70px] object-contain mx-auto"
+  <h2 className="mt-3 text-2xl font-black text-[#12351f]">
 
-/>
+    Наші партнери
 
-<h3 className="mt-4 text-xl font-black text-center">
+  </h2>
 
-  JAKO
+  <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
 
-</h3>
-          </a>
+    {[
 
-          <a
-            href="https://ksm-group.ua"
-            target="_blank"
-            className="w-[260px] h-[170px] flex flex-col justify-center rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
-          >
-            <img
+      ["JAKO", "/images/jaco_logo.png", "https://jakosport.com.ua/uk"],
 
-  src="/images/ksm_logo.png"
+      ["KSM GROUP", "/images/ksm_logo.png", "https://ksm-group.ua"],
 
-  className="w-[180px] h-[70px] object-contain mx-auto"
+      ["FANREKO", "/images/fanreko_logo.png", "https://fanreko.com"],
 
-/>
+      ["МЕГАТЕХСЕРВІС", "/images/megateh_logo.png", "#"],
 
-<h3 className="mt-4 text-xl font-black text-center">
+    ].map(([name, logo, href]) => (
 
-  KSM GROUP
+      <a
 
-</h3>
-          </a>
-            <a
+        key={name}
 
-  href="https://fanreko.com"
+        href={href}
 
-  target="_blank"
+        target="_blank"
 
-  className="w-[260px] h-[170px] flex flex-col justify-center rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
+        className="flex h-[140px] flex-col items-center justify-center rounded-2xl bg-[#f5f7ef] p-4 transition hover:-translate-y-1 hover:shadow-lg"
 
->
+      >
 
-  <img
+        <img
 
-    src="/images/fanreko_logo.png"
+          src={logo}
 
-    className="w-[180px] h-[70px] object-contain mx-auto"
+          alt={name}
 
-  />
+          className="h-[52px] max-w-[150px] object-contain"
 
-  <h3 className="mt-4 text-xl font-black text-center">
+        />
 
-    FANREKO
+        <h3 className="mt-5 text-center text-sm font-black">
 
-  </h3>
+          {name}
 
-</a>
-          <div className="w-[260px] h-[170px] flex flex-col justify-center rounded-2xl bg-[#f5f7ef] p-6">
+        </h3>
 
-  <img
+      </a>
 
-    src="/images/megateh_logo.png"
+    ))}
 
-    className="w-[180px] h-[70px] object-contain mx-auto"
+  </div>
 
-  />
-
-  <h3 className="mt-4 text-xl font-black text-center">
-
-    МЕГАТЕХСЕРВІС
-
-  </h3>
-
-</div>
-        </div>
-      </section>
+</section>
     </main>
   );
 }
