@@ -169,10 +169,23 @@ export default function BusinessCardWebsite() {
   </h3>
 
 </a>
-          <div className="rounded-2xl bg-[#f5f7ef] p-6">
-            <div className="text-3xl">🏢</div>
-            <h3 className="mt-4 text-xl font-black">МЕГАТЕХСЕРВІС</h3>
-          </div>
+          <div className="w-[260px] h-[170px] flex flex-col justify-center rounded-2xl bg-[#f5f7ef] p-6">
+
+  <img
+
+    src="/images/megateh_logo.png"
+
+    className="w-[180px] h-[70px] object-contain mx-auto"
+
+  />
+
+  <h3 className="mt-4 text-xl font-black text-center">
+
+    МЕГАТЕХСЕРВІС
+
+  </h3>
+
+</div>
         </div>
       </section>
     </main>
