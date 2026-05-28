@@ -279,6 +279,18 @@ h2 {
   display:block;
 
 }
+.hero-content{
+
+  position:relative;
+
+  z-index:2;
+
+  max-width:720px;
+
+  flex:1;
+
+}
+
 .hero-logo{
 
   width:320px;
@@ -289,15 +301,7 @@ h2 {
 
   opacity:.95;
 
-}
-
-.hero-content{
-
-  position:relative;
-
-  z-index:2;
-
-  max-width:720px;
+  flex-shrink:0;
 
 }
 
