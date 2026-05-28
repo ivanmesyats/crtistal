@@ -277,14 +277,6 @@ h2 {
 }
 .hero-logo{
 
-  position:absolute;
-
-  right:60px;
-
-  top:50%;
-
-  transform:translateY(-50%);
-
   width:320px;
 
   height:320px;
@@ -301,7 +293,7 @@ h2 {
 
   z-index:2;
 
-  max-width:760px;
+  max-width:720px;
 
 }
 
@@ -328,7 +320,29 @@ h2 {
 
   }
 
-  .hero,
+  .hero {
+
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 520px;
+
+  padding: 48px;
+
+  background: linear-gradient(135deg, #0f2f1b, #1f6b3a);
+
+  color: white;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 40px;
+
+}
 
   .info {
 
@@ -346,20 +360,15 @@ h2 {
 
   .hero-logo{
 
-    position:static;
+  width:300px;
 
-    transform:none;
+  height:300px;
 
-    width:180px;
+  object-fit:contain;
 
-    height:180px;
+  flex-shrink:0;
 
-    margin:30px auto 0;
-
-    display:block;
-
-  }
-
+}
   .partners-strip{
 
     padding:24px;
