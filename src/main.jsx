@@ -114,7 +114,7 @@ export default function BusinessCardWebsite() {
 
   src="/images/jaco_logo.png"
 
-  className="w-[320px] h-[110px] object-contain mx-auto"
+  className="w-[220px] h-[90px] object-contain mx-auto"
 
 />
 
@@ -134,7 +134,7 @@ export default function BusinessCardWebsite() {
 
   src="/images/ksm_logo.png"
 
-  className="w-[320px] h-[110px] object-contain mx-auto"
+  className="w-[220px] h-[90px] object-contain mx-auto"
 
 />
 
@@ -150,7 +150,7 @@ export default function BusinessCardWebsite() {
 
   target="_blank"
 
-  cclassName="w-[360px] h-[220px] flex flex-col justify-center rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
+  className="w-[360px] h-[220px] flex flex-col justify-center rounded-2xl bg-[#f5f7ef] p-6 transition hover:-translate-y-1 hover:shadow-lg"
 
 >
 
@@ -158,7 +158,7 @@ export default function BusinessCardWebsite() {
 
     src="/images/fanreko_logo.png"
 
-    className="w-[320px] h-[110px] object-contain mx-auto"
+    className="w-[220px] h-[90px] object-contain mx-auto"
 
   />
 
