@@ -131,7 +131,9 @@ export default function BusinessCardWebsite() {
 
         target="_blank"
 
-        className="flex h-[140px] flex-col items-center justify-center rounded-2xl bg-[#f5f7ef] p-4 transition hover:-translate-y-1 hover:shadow-lg"
+        className="flex flex-col items-center justify-center rounded-2xl bg-[#f5f7ef] p-4 transition hover:-translate-y-1 hover:shadow-lg"
+
+        style={{ height: "140px" }}
 
       >
 
@@ -141,7 +143,15 @@ export default function BusinessCardWebsite() {
 
           alt={name}
 
-          className="h-[52px] max-w-[150px] object-contain"
+          style={{
+
+            height: "52px",
+
+            maxWidth: "150px",
+
+            objectFit: "contain"
+
+          }}
 
         />
 
