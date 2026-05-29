@@ -25,31 +25,24 @@ body {
   box-shadow: 0 24px 80px rgba(18, 53, 31, 0.14);
 }
 
-.hero::after{
+.hero{
 
-  content:"";
+  position:relative;
 
-  position:absolute;
+  overflow:hidden;
 
-  right:-40px;
+  background:linear-gradient(135deg,#0f2f1b,#1f6b3a);
 
-  top:50%;
+  color:#fff;
 
-  transform:translateY(-50%);
+  border-radius:34px;
 
-  width:560px;
+  padding:60px;
 
-  height:560px;
-
-  background:url('/images/crystal_logo_effect.png') center/contain no-repeat;
-
-  opacity:.9;
-
-  pointer-events:none;
-
-  z-index:1;
+  min-height:520px;
 
 }
+
 .hero::after{
 
   content:"";
@@ -336,7 +329,7 @@ h2 {
   .partners-strip {
     padding: 28px;
   }
-  ..hero::after{
+  .hero::after{
 
     width:220px;
 
