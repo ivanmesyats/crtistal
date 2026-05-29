@@ -47,37 +47,9 @@ body {
 
 .hero-logo{
 
-  position:absolute;
+  width:220px;
 
-  right:-40px;
-
-  top:50%;
-
-  transform:translateY(-50%);
-
-  width:560px;
-
-  height:560px;
-
-  object-fit:contain;
-
-  opacity:.95;
-
-  pointer-events:none;
-
-  z-index:1;
-
-  will-change:transform;
-
-  animation:logoFloat 6s ease-in-out infinite;
-
-  filter:
-
-    drop-shadow(0 0 20px rgba(245,214,107,.8))
-
-    drop-shadow(0 0 60px rgba(245,214,107,.5))
-
-    drop-shadow(0 0 120px rgba(255,255,255,.25));
+  height:220px;
 
 }
 .hero-content{
@@ -86,7 +58,7 @@ body {
 
   z-index:2;
 
-  max-width:700px;
+  max-width:720px;
 
 }
 
@@ -342,6 +314,20 @@ h2 {
 @media (max-width: 650px) {
   .page {
     padding: 14px;
+  }
+
+  .hero-logo{
+
+    width:150px;
+
+    height:150px;
+
+    right:10px;
+
+    top:58%;
+
+    opacity:.16;
+
   }
 
   .hero,
