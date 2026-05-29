@@ -53,6 +53,8 @@ body {
 
   top:50%;
 
+  transform:translateY(-50%);
+
   width:560px;
 
   height:560px;
@@ -64,6 +66,8 @@ body {
   pointer-events:none;
 
   z-index:1;
+
+  will-change:transform;
 
   animation:logoFloat 6s ease-in-out infinite;
 
@@ -311,19 +315,27 @@ h2 {
 }
 
 @media (max-width: 700px) {
+
   .hero {
-    flex-direction:column;
 
     text-align:center;
 
-    gap:30px;
   }
 
+  .actions{
+
+    justify-content:center;
+
+  }
 
   .features,
+
   .partners-logos {
+
     grid-template-columns: repeat(2, 1fr);
+
   }
+
 }
 
 
@@ -340,15 +352,17 @@ h2 {
 
   .hero-logo{
 
-  width:240px;
+    width:240px;
 
-  height:240px;
+    height:240px;
 
-  right:-40px;
+    right:-40px;
 
-  opacity:.45;
+    top:55%;
 
-}
+    opacity:.45;
+
+  }
 
   .features,
   .partners-logos {
