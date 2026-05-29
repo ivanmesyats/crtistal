@@ -26,16 +26,27 @@ body {
 }
 
 .hero {
-  position: relative;
-  overflow: hidden;
-  min-height: 560px;
-  padding: 60px;
-  background: linear-gradient(135deg, #0f2f1b, #1f6b3a);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 48px;
+  position:relative;
+
+  overflow:hidden;
+
+  background:linear-gradient(135deg,#0f2f1b,#1f6b3a);
+
+  color:#fff;
+
+  border-radius:34px;
+
+  padding:60px;
+
+  box-shadow:0 24px 80px rgba(18,53,31,.18);
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:60px;
 }
 
 .glow {
@@ -69,13 +80,13 @@ body {
 }
 
 .hero-logo {
-  position: relative;
-  z-index: 2;
-  display: block;
-  width: 260px;
-  height: 260px;
-  object-fit: contain;
-  flex-shrink: 0;
+  width:280px;
+
+  height:280px;
+
+  object-fit:contain;
+
+  display:block;
 }
 
 .badge {
@@ -278,10 +289,13 @@ h2 {
   text-align: center;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 700px) {
   .hero {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:30px;
   }
 
   .hero-logo {
@@ -294,6 +308,21 @@ h2 {
   .partners-logos {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+.hero-logo-wrap{
+
+  flex:0 0 320px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  position:relative;
+
+  z-index:2;
+
 }
 
 @media (max-width: 650px) {
