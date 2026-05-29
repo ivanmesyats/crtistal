@@ -84,29 +84,7 @@ body {
   filter: blur(45px);
   opacity: 0.6;
 }
-.hero-logo{
 
-  position:absolute;
-
-  right:-40px;
-
-  top:50%;
-
-  transform:translateY(-50%);
-
-  width:560px;
-
-  height:560px;
-
-  object-fit:contain;
-
-  opacity:.95;
-
-  pointer-events:none;
-
-  z-index:1;
-
-}
 .glow-one {
   width: 250px;
   height: 250px;
@@ -351,17 +329,7 @@ h2 {
   .partners-strip {
     padding: 28px;
   }
-  .hero::after{
 
-    width:220px;
-
-    height:220px;
-
-    right:-20px;
-
-    opacity:.4;
-
-  }
   .hero-logo{
 
   width:240px;
