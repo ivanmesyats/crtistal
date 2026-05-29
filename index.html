@@ -1,12 +1,203 @@
 <!doctype html>
 <html lang="uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CRYSTAL UNITED</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CRYSTAL UNITED</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#f5f7ef;color:#12351f}
+.page{padding:24px}
+.container{max-width:1180px;margin:auto}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#0f2f1b,#1f6b3a);color:#fff;border-radius:34px;padding:60px;box-shadow:0 24px 80px rgba(18,53,31,.18)}
+.badge{display:inline-block;padding:10px 16px;border-radius:999px;background:#f5d66b;color:#12351f;font-weight:900;text-transform:uppercase;font-size:14px}
+h1{margin:22px 0 0;font-size:78px;line-height:.92;font-weight:900}
+h2{margin:0;font-size:42px}
+.free{margin-top:24px;color:#f5d66b;font-size:28px;font-weight:900}
+.description{margin-top:22px;max-width:720px;font-size:21px;line-height:1.6;color:#eef7ee}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.actions a{text-decoration:none;padding:16px 22px;border-radius:16px;font-weight:900}
+.primary{background:#f5d66b;color:#12351f}
+.secondary{color:#fff;border:1px solid rgba(255,255,255,.35)}
+.section{margin-top:28px;background:#fff;border-radius:34px;padding:42px;box-shadow:0 24px 80px rgba(18,53,31,.10)}
+.section-text{margin-top:16px;color:#58625b;font-size:18px;line-height:1.65}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+.feature{background:#f5f7ef;border-radius:24px;padding:24px}
+.feature-icon{font-size:32px;margin-bottom:14px}
+.feature b{display:block;font-size:20px;margin-bottom:8px}
+.feature span{display:block;color:#58625b;line-height:1.5}
+.gallery-wrap{overflow:hidden;margin-top:28px}
+.gallery{display:flex;gap:16px;width:max-content;animation:scrollGallery 35s linear infinite}
+.gallery:hover{animation-play-state:paused}
+@keyframes scrollGallery{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.photo{width:430px;height:300px;flex:0 0 auto;border-radius:26px;overflow:hidden;background:linear-gradient(135deg,#12351f,#1f6b3a)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.placeholder{width:100%;height:100%;display:grid;place-items:center;color:#fff;font-weight:900}
+.footer{margin-top:28px;background:#12351f;color:#fff;border-radius:34px;padding:36px}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.footer-links{display:flex;gap:12px;flex-wrap:wrap}
+.footer-links a{color:#fff;text-decoration:none;padding:14px 18px;border-radius:14px;background:rgba(255,255,255,.08)}
+.partners{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
+.partner{display:block;background:#f5f7ef;border-radius:24px;padding:24px;text-decoration:none;color:#12351f}
+.partner-logo{width:72px;height:72px;object-fit:contain;background:#fff;border-radius:18px;padding:10px;box-shadow:0 8px 20px rgba(0,0,0,.08)}
+.partner p{color:#58625b;line-height:1.5}
+@media(max-width:950px){.features,.partners{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:650px){.page{padding:14px}.hero,.section,.footer{padding:28px}.features,.partners{grid-template-columns:1fr}.photo{width:300px;height:220px}h1{font-size:52px}}
+</style>
+</head>
+<body>
+<main class="page">
+<div class="container">
+
+<section class="hero">
+
+<div class="hero-content">
+
+<div class="badge">Дитячий футбольний клуб</div>
+
+<h1>CRYSTAL UNITED</h1>
+
+<p class="free">Перше тренування — БЕЗКОШТОВНО!</p>
+
+<p class="description">
+
+Футбольні тренування для дітей від 4 до 13 років.
+
+Розвиваємо техніку, дисципліну, командний дух і любов до гри.
+
+</p>
+
+<div class="actions">
+
+<a class="primary" href="tel:+380939726897">Подзвонити</a>
+
+<a class="secondary"
+
+href="https://t.me/crystal_united"
+
+target="_blank">
+
+Записатися в Telegram
+
+</a>
+
+</div>
+
+</div>
+
+ <!--<img
+
+    class="hero-logo"
+
+    src="images/crystal_logo.png"
+
+    alt="Crystal United Logo"
+
+  />-->
+</section>
+
+<section class="section">
+<h2>Про нас</h2>
+<p class="section-text">CRYSTAL UNITED — більше, ніж просто футбол ⚽</p>
+Ми створили простір, де діти не лише вчаться грати у футбол, а й ростуть впевненими, дисциплінованими та дружніми особистостями.
+У CRYSTAL UNITED кожне тренування — це поєднання розвитку, емоцій та командного духу. Ми віримо, що справжня команда починається з підтримки, поваги та любові до гри.
+Наші тренування проходять у сучасному підході:
+<p>⚽ розвиток техніки та футбольного мислення</p>
+<p>🔥 активність, дисципліна та характер</p>
+<p>🤝 дружня атмосфера без тиску</p>
+<p>🏆 мотивація ставати кращими щодня</p>
+<h2>Наша філософія</h2>
+<p>Ми не виховуємо лише футболістів — ми допомагаємо дітям ставати сильнішими як у спорті, так і в житті.
+У центрі нашої філософії:
+індивідуальний підхід до кожної дитини
+розвиток впевненості та лідерських якостей
+підтримка та взаємоповага в команді
+любов до спорту через позитивні емоції
+Наше головне завдання — щоб діти із задоволенням приходили на тренування та відчували себе частиною справжньої команди.
+Команда
+CRYSTAL UNITED — це команда друзів, які разом тренуються, підтримують один одного та ростуть через футбол.
+Ми створюємо атмосферу, де:</p>
+<p>⚽ кожна дитина важлива</p>
+<p>💙 помилки — це частина розвитку</p>
+<p>🔥 тренування мотивують, а не лякають</p>
+<p>🏃 діти вчаться працювати в команді та вірити у свої сили</p>
+</p>
+
+<div class="features">
+<div class="feature"><div class="feature-icon">⚽</div><b>Команда</b><span>Дружня атмосфера, підтримка та розвиток командного духу.</span></div>
+<div class="feature"><div class="feature-icon">🏆</div><b>Чемпіонати</b><span>Участь у турнірах та футбольних матчах.</span></div>
+<div class="feature"><div class="feature-icon">⏱️</div><b>Умови</b><span>Три тренування на тиждень, заняття для дітей від 4 до 13 років</span></div>
+<div class="feature"><div class="feature-icon">🎓</div><b>Тренер</b><span>Ліцензований тренер та сучасний підхід до навчання.</span></div>
+</div>
+</section>
+
+<section class="section">
+<div class="badge">Галерея</div>
+
+<div class="gallery-wrap">
+<div class="gallery">
+<div class="photo"><img src="/images/photo1.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo1.jpg</div></div>
+<div class="photo"><img src="/images/photo2.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo2.jpg</div></div>
+<div class="photo"><img src="/images/photo3.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo3.jpg</div></div>
+<div class="photo"><img src="/images/photo4.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo4.jpg</div></div>
+
+<div class="photo"><img src="/images/photo1.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo1.jpg</div></div>
+<div class="photo"><img src="/images/photo2.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo2.jpg</div></div>
+<div class="photo"><img src="/images/photo3.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo3.jpg</div></div>
+<div class="photo"><img src="/images/photo4.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo4.jpg</div></div>
+</div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="footer-inner">
+<div>
+<h2>CRYSTAL UNITED</h2>
+<p>Дитячий футбольний клуб</p>
+</div>
+
+<div class="footer-links">
+<a href="tel:+380732791099">📞 +380 93 972 68 97</a>
+<a href="https://t.me/crystal_united" target="_blank">💬 Telegram</a>
+<a href="https://www.instagram.com/fc_crystalunited?igsh=MXc5dW0xMTE0Z210Ng==" target="_blank">📸 Instagram</a>
+</div>
+</div>
+</footer>
+
+<section class="partners-strip">
+
+  <h3>Наші партнери</h3>
+
+  <div class="partners-logos">
+
+    <a href="https://jakosport.com.ua/uk" target="_blank">
+
+      <img class="partner-logo-small" src="images/jaco_logo.png">
+
+    </a>
+
+    <a href="https://ksm-group.ua" target="_blank">
+
+      <img class="partner-logo-small" src="images/ksm_logo.png">
+
+    </a>
+
+    <a href="https://fanreko.com" target="_blank">
+
+      <img class="partner-logo-small" src="images/fanreko_logo.png">
+
+    </a>
+
+    <a href="https://www.artan-gur.com/" target="_blank">
+
+      <img class="partner-logo-small" src="images/artan_logo.png">
+
+    </a>
+
+  </div>
+
+</section>
+</div>
+</main>
+</body>
 </html>
