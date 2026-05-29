@@ -279,29 +279,49 @@ h2 {
   display:block;
 
 }
+.hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:linear-gradient(135deg,#0f2f1b,#1f6b3a);
+
+    color:#fff;
+
+    border-radius:34px;
+
+    padding:60px;
+
+    box-shadow:0 24px 80px rgba(18,53,31,.18);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:40px;
+
+}
+
 .hero-content{
 
-  position:relative;
+    flex:1;
 
-  z-index:2;
-
-  max-width:720px;
-
-  flex:1;
+    max-width:720px;
 
 }
 
 .hero-logo{
 
-  width:320px;
+    width:320px;
 
-  height:320px;
+    height:320px;
 
-  object-fit:contain;
+    object-fit:contain;
 
-  opacity:.95;
-
-  flex-shrink:0;
+    flex-shrink:0;
 
 }
 
