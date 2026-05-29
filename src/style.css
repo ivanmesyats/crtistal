@@ -28,18 +28,6 @@ body {
   box-shadow: 0 24px 80px rgba(18, 53, 31, 0.18);
 }
 
-.hero{
-position:relative;
-overflow:hidden;
-min-height:620px;
-padding:48px;
-background:linear-gradient(135deg,#0f2f1b,#1f6b3a);
-color:white;
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:40px;
-}
 
 .glow {
   position: absolute;
@@ -302,6 +290,9 @@ h2 {
     justify-content:space-between;
 
     gap:40px;
+    flex-direction:column;
+
+  align-items:flex-start;
 
 }
 
@@ -365,13 +356,11 @@ h2 {
 
   .hero-logo{
 
-  width:300px;
+  width:180px;
 
-  height:300px;
+  height:180px;
 
-  object-fit:contain;
-
-  flex-shrink:0;
+  margin:30px auto 0;
 
 }
   .partners-strip{
