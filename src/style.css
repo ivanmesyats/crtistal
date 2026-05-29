@@ -47,9 +47,27 @@ body {
 
 .hero-logo{
 
+  position:absolute;
+
+  right:30px;
+
+  top:50%;
+
+  transform:translateY(-50%);
+
   width:220px;
 
   height:220px;
+
+  object-fit:contain;
+
+  opacity:.25;
+
+  pointer-events:none;
+
+  z-index:1;
+
+  filter:brightness(0) invert(1);
 
 }
 .hero-content{
@@ -312,60 +330,63 @@ h2 {
 
 
 @media (max-width: 650px) {
+
   .page {
+
     padding: 14px;
-  }
-
-  .hero-logo{
-
-    width:150px;
-
-    height:150px;
-
-    right:10px;
-
-    top:58%;
-
-    opacity:.16;
 
   }
 
   .hero,
+
   .section,
+
   .partners-strip {
+
     padding: 28px;
+
   }
 
-  .hero-logo{
+  .hero-logo {
 
-    width:240px;
+    width: 150px;
 
-    height:240px;
+    height: 150px;
 
-    right:-40px;
+    right: 10px;
 
-    top:55%;
+    top: 58%;
 
-    opacity:.45;
+    opacity: .16;
 
   }
 
   .features,
+
   .partners-logos {
+
     grid-template-columns: 1fr;
+
   }
 
   h1 {
+
     font-size: 46px;
+
   }
 
   h2 {
+
     font-size: 30px;
+
   }
 
   .free {
+
     font-size: 22px;
+
   }
+
 }
 @keyframes logoFloat{
 
