@@ -43,7 +43,7 @@ export default function BusinessCardWebsite() {
             </div>
             <img src="/images/crystal_logo.png"
                   alt="Crystal United Logo"
-                  className="hidden lg:block w-[180px] h-[180px] object-contain flex-shrink-0 relative z-10"/>
+                  className="block w-[180px] h-[180px] object-contain flex-shrink-0 relative z-10"/>
           </div>
 
           <div className="p-8 md:p-12">
