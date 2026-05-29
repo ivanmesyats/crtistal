@@ -41,11 +41,11 @@ body {
 
   min-height:520px;
 
+  box-shadow:0 24px 80px rgba(18,53,31,.18);
+
 }
 
-.hero::after{
-
-  content:"";
+.hero-logo{
 
   position:absolute;
 
@@ -59,7 +59,7 @@ body {
 
   height:560px;
 
-  background:url('/images/crystal_logo_effect.png') center center / contain no-repeat;
+  object-fit:contain;
 
   opacity:.95;
 
@@ -84,7 +84,29 @@ body {
   filter: blur(45px);
   opacity: 0.6;
 }
+.hero-logo{
 
+  position:absolute;
+
+  right:-40px;
+
+  top:50%;
+
+  transform:translateY(-50%);
+
+  width:560px;
+
+  height:560px;
+
+  object-fit:contain;
+
+  opacity:.95;
+
+  pointer-events:none;
+
+  z-index:1;
+
+}
 .glow-one {
   width: 250px;
   height: 250px;
@@ -340,6 +362,17 @@ h2 {
     opacity:.4;
 
   }
+  .hero-logo{
+
+  width:240px;
+
+  height:240px;
+
+  right:-40px;
+
+  opacity:.45;
+
+}
 
   .features,
   .partners-logos {
