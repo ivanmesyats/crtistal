@@ -40,10 +40,10 @@ export default function BusinessCardWebsite() {
                   Записатися в Telegram
                 </a>
               </div>
-                <img src="/images/crystal_logo.png"
+            </div>
+            <img src="/images/crystal_logo.png"
                   alt="Crystal United Logo"
                   className="hidden lg:block w-[280px] h-[280px] object-contain flex-shrink-0 relative z-10"/>
-            </div>
           </div>
 
           <div className="p-8 md:p-12">
