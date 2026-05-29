@@ -53,8 +53,6 @@ body {
 
   top:50%;
 
-  transform:translateY(-50%);
-
   width:560px;
 
   height:560px;
@@ -66,6 +64,16 @@ body {
   pointer-events:none;
 
   z-index:1;
+
+  animation:logoFloat 6s ease-in-out infinite;
+
+  filter:
+
+    drop-shadow(0 0 20px rgba(245,214,107,.8))
+
+    drop-shadow(0 0 60px rgba(245,214,107,.5))
+
+    drop-shadow(0 0 120px rgba(255,255,255,.25));
 
 }
 .hero-content{
@@ -358,4 +366,19 @@ h2 {
   .free {
     font-size: 22px;
   }
+}
+@keyframes logoFloat{
+
+  0%,100%{
+
+    transform:translateY(-50%) scale(1);
+
+  }
+
+  50%{
+
+    transform:translateY(-53%) scale(1.03);
+
+  }
+
 }
