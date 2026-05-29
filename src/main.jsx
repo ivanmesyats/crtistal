@@ -9,7 +9,7 @@ export default function BusinessCardWebsite() {
           <div className="relative overflow-hidden bg-[#12351f] p-8 text-white md:p-12 flex items-center justify-between gap-8">
             <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[#f5d66b]/20 blur-3xl" />
               <div className="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-green-500/20 blur-3xl" />
-              <div className="relative z-10">
+              <div className="relative z-10 flex-1">
               <p className="mb-5 inline-block rounded-full bg-[#f5d66b] px-4 py-2 text-sm font-black uppercase tracking-wide text-[#12351f]">
                 Дитячий футбольний клуб
               </p>
@@ -43,7 +43,7 @@ export default function BusinessCardWebsite() {
             </div>
             <img src="/images/crystal_logo.png"
                   alt="Crystal United Logo"
-                  className="hidden lg:block w-[280px] h-[280px] object-contain flex-shrink-0 relative z-10"/>
+                  className="hidden xl:block w-[220px] h-[220px] object-contain flex-shrink-0 relative z-10"/>
           </div>
 
           <div className="p-8 md:p-12">
