@@ -56,21 +56,19 @@ body {
 
   position:absolute;
 
-  right:40px;
+  right:-40px;
 
   top:50%;
 
   transform:translateY(-50%);
 
-  width:420px;
+  width:560px;
 
-  height:420px;
+  height:560px;
 
-  background:url('/images/crystal_logo.png') center/contain no-repeat;
+  background:url('/images/crystal_logo_effect.png') center center / contain no-repeat;
 
-  filter:brightness(0) invert(1);
-
-  opacity:.22;
+  opacity:.95;
 
   pointer-events:none;
 
@@ -338,15 +336,15 @@ h2 {
   .partners-strip {
     padding: 28px;
   }
-  .hero::after{
+  ..hero::after{
 
-    width:180px;
+    width:220px;
 
-    height:180px;
+    height:220px;
 
-    right:20px;
+    right:-20px;
 
-    opacity:.12;
+    opacity:.4;
 
   }
 
