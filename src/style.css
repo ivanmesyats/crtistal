@@ -48,21 +48,31 @@ body {
 
   position:absolute;
 
-  right:60px;
+  right:40px;
 
   top:50%;
 
   transform:translateY(-50%);
 
-  width:320px;
+  width:360px;
 
-  height:320px;
+  height:360px;
 
   background:url('/images/crystal_logo.png') center/contain no-repeat;
 
-  opacity:.18;
+  opacity:.22;
 
   pointer-events:none;
+
+}
+
+.hero-content{
+
+  position:relative;
+
+  z-index:2;
+
+  max-width:700px;
 
 }
 
