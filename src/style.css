@@ -295,21 +295,26 @@ h2 {
 
 .hero-content{
 
-    flex:1;
+  position: relative;
 
-    max-width:720px;
+  z-index: 2;
 
+  flex: 1;
+
+  max-width: 720px;
 }
 
 .hero-logo{
 
-    width:320px;
+  display:block;
 
-    height:320px;
+  width:320px;
 
-    object-fit:contain;
+  height:320px;
 
-    flex-shrink:0;
+  object-fit:contain;
+
+  flex-shrink:0;
 
 }
 
