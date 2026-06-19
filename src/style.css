@@ -388,19 +388,6 @@ h2 {
   }
 
 }
-@keyframes logoFloat{
-
-  0%,100%{
-
-    transform:translateY(-50%) scale(1);
-
-  }
-
-  50%{
-
-    transform:translateY(-53%) scale(1.03);
-
-  }
   .page-video{
 
   position:fixed;
@@ -430,5 +417,19 @@ h2 {
   pointer-events:none;
 
 }
+
+@keyframes logoFloat{
+
+  0%,100%{
+
+    transform:translateY(-50%) scale(1);
+
+  }
+
+  50%{
+
+    transform:translateY(-53%) scale(1.03);
+
+  }
 
 }
