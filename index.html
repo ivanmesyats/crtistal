@@ -43,6 +43,52 @@ h2{margin:0;font-size:42px}
 .partner p{color:#58625b;line-height:1.5}
 @media(max-width:950px){.features,.partners{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:650px){.page{padding:14px}.hero,.section,.footer{padding:28px}.features,.partners{grid-template-columns:1fr}.photo{width:300px;height:220px}h1{font-size:52px}}
+
+/* ===== VIDEO BACKGROUND FIX ===== */
+html,
+body{
+  margin:0;
+  min-height:100%;
+  font-family:Arial, sans-serif;
+  background:#12351f;
+  color:#12351f;
+}
+
+.page-video{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  object-fit:cover;
+  z-index:0;
+  display:block;
+}
+
+.page-overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  background:rgba(8,30,16,.45);
+  z-index:1;
+  pointer-events:none;
+}
+
+.page{
+  position:relative;
+  z-index:2;
+  min-height:100vh;
+  padding:24px;
+}
+
+.section,
+.partners-strip{
+  background:rgba(255,255,255,.90);
+  backdrop-filter:blur(10px);
+}
+
 </style>
 </head>
 <body>
@@ -61,8 +107,6 @@ h2{margin:0;font-size:42px}
 
 <section class="hero">
   
-  <div class="hero-overlay"></div>
-
   <div class="hero-content">
 
     <div class="badge">Дитячий футбольний клуб</div>
