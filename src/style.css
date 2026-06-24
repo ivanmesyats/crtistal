@@ -22,35 +22,6 @@ body {
   padding:28px;
 }
 
-.page-video{
-
-  position:fixed;
-
-  inset:0;
-
-  width:100vw;
-
-  height:100vh;
-
-  object-fit:cover;
-
-  z-index:0;
-
-}
-
-.page-overlay{
-
-  position:fixed;
-
-  inset:0;
-
-  background:rgba(8,30,16,.45);
-
-  z-index:1;
-
-  pointer-events:none;
-
-}
 
 .card,
 .partners-strip {
