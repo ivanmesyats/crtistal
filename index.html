@@ -9,6 +9,7 @@
 body{margin:0;font-family:Arial,sans-serif;background:#f5f7ef;color:#12351f}
 .page{padding:24px}
 .container{max-width:1180px;margin:auto}
+
 .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#0f2f1b,#1f6b3a);color:#fff;border-radius:34px;padding:60px;box-shadow:0 24px 80px rgba(18,53,31,.18)}
 .badge{display:inline-block;padding:10px 16px;border-radius:999px;background:#f5d66b;color:#12351f;font-weight:900;text-transform:uppercase;font-size:14px}
 h1{margin:22px 0 0;font-size:78px;line-height:.92;font-weight:900}
@@ -19,91 +20,62 @@ h2{margin:0;font-size:42px}
 .actions a{text-decoration:none;padding:16px 22px;border-radius:16px;font-weight:900}
 .primary{background:#f5d66b;color:#12351f}
 .secondary{color:#fff;border:1px solid rgba(255,255,255,.35)}
+
+.hero-logo{
+  position:absolute;
+  right:-60px;
+  top:50%;
+  transform:translateY(-50%);
+  width:600px;
+  height:440px;
+  opacity:.25;
+  pointer-events:none;
+}
+
 .section{margin-top:28px;background:#fff;border-radius:34px;padding:42px;box-shadow:0 24px 80px rgba(18,53,31,.10)}
 .section-text{margin-top:16px;color:#58625b;font-size:18px;line-height:1.65}
+
 .features{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
 .feature{background:#f5f7ef;border-radius:24px;padding:24px}
 .feature-icon{font-size:32px;margin-bottom:14px}
 .feature b{display:block;font-size:20px;margin-bottom:8px}
 .feature span{display:block;color:#58625b;line-height:1.5}
-  .video-section{
 
-  margin-top:28px;
-
-  overflow:hidden;
-
-}
-
+.video-section{margin-top:28px;overflow:hidden}
 .video-box{
-
   width:100%;
-
   margin-top:24px;
-
   aspect-ratio:16/9;
-
   border-radius:24px;
-
   overflow:hidden;
-
   background:#12351f;
-
   box-shadow:0 20px 50px rgba(0,0,0,.25);
   position:relative;
-
 }
-  .sound-btn{
-
+.sound-btn{
   position:absolute;
-
   right:14px;
-
   bottom:14px;
-
   width:48px;
-
   height:48px;
-
   border:0;
-
   border-radius:50%;
-
   background:rgba(0,0,0,.65);
-
   color:#fff;
-
   font-size:22px;
-
   cursor:pointer;
-
   z-index:5;
-
 }
-  .sound-btn:hover{
-
-  background:rgba(0,0,0,.8);
-
-}
-
-.sound-btn:active{
-
-  transform:scale(.95);
-
-}
-
+.sound-btn:hover{background:rgba(0,0,0,.8)}
+.sound-btn:active{transform:scale(.95)}
 .club-video{
-
   width:100%;
-
   height:100%;
-
   display:block;
-
   object-fit:cover;
-
   object-position:center 45%;
-
 }
+
 .gallery-wrap{overflow:hidden;margin-top:28px}
 .gallery{display:flex;gap:16px;width:max-content;animation:scrollGallery 35s linear infinite}
 .gallery:hover{animation-play-state:paused}
@@ -111,352 +83,248 @@ h2{margin:0;font-size:42px}
 .photo{width:430px;height:300px;flex:0 0 auto;border-radius:26px;overflow:hidden;background:linear-gradient(135deg,#12351f,#1f6b3a)}
 .photo img{width:100%;height:100%;object-fit:cover}
 .placeholder{width:100%;height:100%;display:grid;place-items:center;color:#fff;font-weight:900}
+
 .footer{margin-top:28px;background:#12351f;color:#fff;border-radius:34px;padding:36px}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
 .footer-links{display:flex;gap:12px;flex-wrap:wrap}
 .footer-links a{color:#fff;text-decoration:none;padding:14px 18px;border-radius:14px;background:rgba(255,255,255,.08)}
-.partners{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:28px}
-.partner{display:block;background:#f5f7ef;border-radius:24px;padding:24px;text-decoration:none;color:#12351f}
-.partner-logo{width:72px;height:72px;object-fit:contain;background:#fff;border-radius:18px;padding:10px;box-shadow:0 8px 20px rgba(0,0,0,.08)}
-.partner p{color:#58625b;line-height:1.5}
-  .partners-strip{
 
+.partners-strip{
   margin-top:28px;
-
   padding:42px;
-
   border-radius:34px;
-
   overflow:hidden;
-
   background:
-
     linear-gradient(
-
       90deg,
-
-      rgba(245,247,239,.96) 0%,
-
-      rgba(245,247,239,.90) 55%,
-
-      rgba(245,247,239,.55) 100%
-
+      rgba(245,247,239,.98) 0%,
+      rgba(245,247,239,.93) 45%,
+      rgba(245,247,239,.75) 70%,
+      rgba(245,247,239,.35) 100%
     ),
-
-    url("/images/partners_bg.png");
-
+    url("/images/partners_bg.jpeg");
   background-size:cover;
-
-  background-position:center right;
-
+  background-position:right center;
   background-repeat:no-repeat;
-
   box-shadow:0 24px 80px rgba(18,53,31,.10);
+}
 
+.partners-strip h3{
+  margin:0;
+  font-size:36px;
+  font-weight:900;
+  color:#12351f;
 }
 
 .partners-logos{
-
   display:flex;
-
+  justify-content:space-between;
   align-items:center;
-
-  gap:42px;
-
+  gap:40px;
   flex-wrap:wrap;
-
-  margin-top:32px;
-
+  margin-top:36px;
 }
 
 .partner-logo-small{
-
   width:220px;
-
-  max-width:100%;
-
-  height:auto;
-
+  height:90px;
   object-fit:contain;
-
-}
-@media(max-width:950px){.features,.partners{grid-template-columns:repeat(2,1fr)}}
-  .partners-strip{
-
-  padding:28px;
-
-  background-position:right bottom;
-
+  transition:.25s ease;
 }
 
-.partners-logos{
+.partner-logo-small:hover{transform:scale(1.05)}
 
-  flex-direction:column;
-
-  align-items:flex-start;
-
-  gap:28px;
-
+@media(max-width:950px){
+  .features{grid-template-columns:repeat(2,1fr)}
 }
 
-.partner-logo-small{
+@media(max-width:650px){
+  .page{padding:14px}
+  .hero,.section,.footer{padding:28px}
+  .features{grid-template-columns:1fr}
+  .photo{width:300px;height:220px}
+  h1{font-size:52px}
+  h2{font-size:32px}
+  .free{font-size:22px}
 
-  width:180px;
+  .hero-logo{
+    width:190px;
+    height:190px;
+    right:-30px;
+    top:auto;
+    bottom:20px;
+    transform:none;
+    opacity:.14;
+  }
 
-}
-@media(max-width:650px){.page{padding:14px}.hero,.section,.footer{padding:28px}.features,.partners{grid-template-columns:1fr}.photo{width:300px;height:220px}h1{font-size:52px}.video-box{
-
+  .video-box{
     aspect-ratio:16/10;
-
     border-radius:18px;
+  }
 
-  }}
+  .partners-strip{
+    padding:28px;
+    background-position:bottom right;
+  }
+
+  .partners-logos{
+    justify-content:center;
+    gap:24px;
+  }
+
+  .partner-logo-small{
+    width:170px;
+    height:70px;
+  }
+}
 </style>
 </head>
 <body>
 
-
 <main class="page">
-  
 <div class="container">
 
 <section class="hero">
-  
-  <div class="hero-overlay"></div>
-
   <div class="hero-content">
-
     <div class="badge">Дитячий футбольний клуб</div>
-
     <h1>CRYSTAL UNITED</h1>
-
     <p class="free">Перше тренування — БЕЗКОШТОВНО!</p>
-
     <p class="description">
-
       Футбольні тренування для дітей від 4 до 13 років.
-
       Розвиваємо техніку, дисципліну, командний дух і любов до гри.
-
     </p>
 
     <div class="actions">
-
       <a class="primary" href="tel:+380939726897">Подзвонити</a>
-
-      <a class="secondary"
-
-         href="https://t.me/crystal_united"
-
-         target="_blank">
-
-         Записатися в Telegram
-
-      </a>
-   <img
-
-  src="/images/crystal_logo.png"
-
-  class="hero-logo"
-
-  style="
-
-    position:absolute;
-
-    right:-60px;
-
-    top:50%;
-
-    transform:translateY(-50%);
-
-    width:600px;
-
-    height:440px;
-
-    opacity:.25;
-
-  "
-
->
-
+      <a class="secondary" href="https://t.me/crystal_united" target="_blank">Записатися в Telegram</a>
     </div>
 
+    <img src="/images/crystal_logo.png" class="hero-logo" alt="Crystal United Logo">
   </div>
 </section>
 
 <section class="section video-section">
-
   <div class="badge">Відео</div>
-
   <h2>Давайте рухатись разом</h2>
-
   <p class="section-text">
-
     Атмосфера тренувань, емоції дітей та справжній командний дух.
-
   </p>
 
-<div class="video-box">
+  <div class="video-box">
+    <video
+      id="clubVideo"
+      class="club-video"
+      autoplay
+      muted
+      loop
+      playsinline
+      webkit-playsinline
+    >
+      <source src="/images/main_bg.mp4" type="video/mp4">
+    </video>
 
-  <video
-
-    id="clubVideo"
-
-    class="club-video"
-
-    autoplay
-
-    muted
-
-    loop
-
-    playsinline
-    webkit-playsinline
-
-  >
-
-    <source src="/images/main_bg.mp4" type="video/mp4">
-
-  </video>
-
-  <button id="soundBtn" class="sound-btn">
-
-    🔇
-
-  </button>
-
-</div>
-
-
+    <button id="soundBtn" class="sound-btn" type="button">🔇</button>
+  </div>
 </section>
 
 <section class="section">
-<h2>Про нас</h2>
-<p class="section-text">CRYSTAL UNITED — більше, ніж просто футбол ⚽</p>
-Ми створили простір, де діти не лише вчаться грати у футбол, а й ростуть впевненими, дисциплінованими та дружніми особистостями.
-У CRYSTAL UNITED кожне тренування — це поєднання розвитку, емоцій та командного духу. Ми віримо, що справжня команда починається з підтримки, поваги та любові до гри.
-Наші тренування проходять у сучасному підході:
-<p>⚽ розвиток техніки та футбольного мислення</p>
-<p>🔥 активність, дисципліна та характер</p>
-<p>🤝 дружня атмосфера без тиску</p>
-<p>🏆 мотивація ставати кращими щодня</p>
-<h2>Наша філософія</h2>
-<p>Ми не виховуємо лише футболістів — ми допомагаємо дітям ставати сильнішими як у спорті, так і в житті.
-У центрі нашої філософії:
-індивідуальний підхід до кожної дитини
-розвиток впевненості та лідерських якостей
-підтримка та взаємоповага в команді
-любов до спорту через позитивні емоції
-Наше головне завдання — щоб діти із задоволенням приходили на тренування та відчували себе частиною справжньої команди.
-Команда
-CRYSTAL UNITED — це команда друзів, які разом тренуються, підтримують один одного та ростуть через футбол.
-Ми створюємо атмосферу, де:</p>
-<p>⚽ кожна дитина важлива</p>
-<p>💙 помилки — це частина розвитку</p>
-<p>🔥 тренування мотивують, а не лякають</p>
-<p>🏃 діти вчаться працювати в команді та вірити у свої сили</p>
-</p>
+  <h2>Про нас</h2>
+  <p class="section-text">CRYSTAL UNITED — більше, ніж просто футбол ⚽</p>
+  <p>Ми створили простір, де діти не лише вчаться грати у футбол, а й ростуть впевненими, дисциплінованими та дружніми особистостями.</p>
+  <p>У CRYSTAL UNITED кожне тренування — це поєднання розвитку, емоцій та командного духу. Ми віримо, що справжня команда починається з підтримки, поваги та любові до гри.</p>
+  <p>⚽ розвиток техніки та футбольного мислення</p>
+  <p>🔥 активність, дисципліна та характер</p>
+  <p>🤝 дружня атмосфера без тиску</p>
+  <p>🏆 мотивація ставати кращими щодня</p>
 
-<div class="features">
-<div class="feature"><div class="feature-icon">⚽</div><b>Команда</b><span>Дружня атмосфера, підтримка та розвиток командного духу.</span></div>
-<div class="feature"><div class="feature-icon">🏆</div><b>Чемпіонати</b><span>Участь у турнірах та футбольних матчах.</span></div>
-<div class="feature"><div class="feature-icon">⏱️</div><b>Умови</b><span>Три тренування на тиждень, заняття для дітей від 4 до 13 років</span></div>
-<div class="feature"><div class="feature-icon">🎓</div><b>Тренер</b><span>Ліцензований тренер та сучасний підхід до навчання.</span></div>
-</div>
+  <h2>Наша філософія</h2>
+  <p>Ми не виховуємо лише футболістів — ми допомагаємо дітям ставати сильнішими як у спорті, так і в житті.</p>
+  <p>⚽ кожна дитина важлива</p>
+  <p>💙 помилки — це частина розвитку</p>
+  <p>🔥 тренування мотивують, а не лякають</p>
+  <p>🏃 діти вчаться працювати в команді та вірити у свої сили</p>
+
+  <div class="features">
+    <div class="feature"><div class="feature-icon">⚽</div><b>Команда</b><span>Дружня атмосфера, підтримка та розвиток командного духу.</span></div>
+    <div class="feature"><div class="feature-icon">🏆</div><b>Чемпіонати</b><span>Участь у турнірах та футбольних матчах.</span></div>
+    <div class="feature"><div class="feature-icon">⏱️</div><b>Умови</b><span>Три тренування на тиждень, заняття для дітей від 4 до 13 років</span></div>
+    <div class="feature"><div class="feature-icon">🎓</div><b>Тренер</b><span>Ліцензований тренер та сучасний підхід до навчання.</span></div>
+  </div>
 </section>
 
 <section class="section">
-<div class="badge">Галерея</div>
+  <div class="badge">Галерея</div>
 
-<div class="gallery-wrap">
-<div class="gallery">
-<div class="photo"><img src="/images/photo1.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo1.jpg</div></div>
-<div class="photo"><img src="/images/photo2.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo2.jpg</div></div>
-<div class="photo"><img src="/images/photo3.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo3.jpg</div></div>
-<div class="photo"><img src="/images/photo4.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo4.jpg</div></div>
+  <div class="gallery-wrap">
+    <div class="gallery">
+      <div class="photo"><img src="/images/photo1.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo1.jpg</div></div>
+      <div class="photo"><img src="/images/photo2.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo2.jpg</div></div>
+      <div class="photo"><img src="/images/photo3.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo3.jpg</div></div>
+      <div class="photo"><img src="/images/photo4.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo4.jpg</div></div>
 
-<div class="photo"><img src="/images/photo1.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo1.jpg</div></div>
-<div class="photo"><img src="/images/photo2.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo2.jpg</div></div>
-<div class="photo"><img src="/images/photo3.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo3.jpg</div></div>
-<div class="photo"><img src="/images/photo4.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo4.jpg</div></div>
-</div>
-</div>
+      <div class="photo"><img src="/images/photo1.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo1.jpg</div></div>
+      <div class="photo"><img src="/images/photo2.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo2.jpg</div></div>
+      <div class="photo"><img src="/images/photo3.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo3.jpg</div></div>
+      <div class="photo"><img src="/images/photo4.jpg" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="placeholder" style="display:none;">photo4.jpg</div></div>
+    </div>
+  </div>
 </section>
 
 <footer class="footer">
-<div class="footer-inner">
-<div>
-<h2>CRYSTAL UNITED</h2>
-<p>Дитячий футбольний клуб</p>
-</div>
+  <div class="footer-inner">
+    <div>
+      <h2>CRYSTAL UNITED</h2>
+      <p>Дитячий футбольний клуб</p>
+    </div>
 
-<div class="footer-links">
-<a href="tel:+380732791099">📞 +380 93 972 68 97</a>
-<a href="https://t.me/crystal_united" target="_blank">💬 Telegram</a>
-<a href="https://www.instagram.com/fc_crystalunited?igsh=MXc5dW0xMTE0Z210Ng==" target="_blank">📸 Instagram</a>
-</div>
-</div>
+    <div class="footer-links">
+      <a href="tel:+380939726897">📞 +380 93 972 68 97</a>
+      <a href="https://t.me/crystal_united" target="_blank">💬 Telegram</a>
+      <a href="https://www.instagram.com/fc_crystalunited?igsh=MXc5dW0xMTE0Z210Ng==" target="_blank">📸 Instagram</a>
+    </div>
+  </div>
 </footer>
 
 <section class="partners-strip">
-
   <h3>Наші партнери</h3>
 
   <div class="partners-logos">
-
     <a href="https://www.artan-gur.com/" target="_blank">
-
-      <img class="partner-logo-small" src="/images/artan_logo.png" loading="lazy">
-
+      <img class="partner-logo-small" src="/images/artan_logo.png" alt="Artan">
     </a>
-    
+
     <a href="https://jakosport.com.ua/uk" target="_blank">
-
-      <img class="partner-logo-small" src="/images/jaco_logo.png" loading="lazy">
-
+      <img class="partner-logo-small" src="/images/jaco_logo.png" alt="JAKO">
     </a>
 
     <a href="https://fanreko.com" target="_blank">
-
-      <img class="partner-logo-small" src="/images/fanreko_logo.png" loading="lazy">
-
+      <img class="partner-logo-small" src="/images/fanreko_logo.png" alt="Fanreko">
     </a>
-
   </div>
-
 </section>
+
 </div>
 </main>
-    <script>
 
+<script>
 document.addEventListener('DOMContentLoaded', () => {
-
   const video = document.getElementById('clubVideo');
-
   const btn = document.getElementById('soundBtn');
 
   function toggleSound() {
-
     video.muted = !video.muted;
-
     btn.textContent = video.muted ? '🔇' : '🔊';
-
     video.play();
-
   }
 
   btn.addEventListener('click', (e) => {
-
     e.stopPropagation();
-
     toggleSound();
-
   });
 
   video.addEventListener('click', toggleSound);
-
 });
-
 </script>
+
 </body>
 </html>
