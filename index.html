@@ -7,10 +7,173 @@
 <style>
 *{box-sizing:border-box}
 body{margin:0;font-family:Arial,sans-serif;background:#f5f7ef;color:#12351f}
+  html{
+
+  scroll-behavior:smooth;
+
+}
+  section{
+
+    scroll-margin-top:110px;
+
+}
 .page{padding:24px}
 .container{max-width:1180px;margin:auto}
+.glass-header{
 
-.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#0f2f1b,#1f6b3a);color:#fff;border-radius:34px;padding:60px;box-shadow:0 24px 80px rgba(18,53,31,.18)}
+    position:sticky;
+
+    top:16px;
+
+    z-index:1000;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    margin-bottom:20px;
+
+    padding:14px 22px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.35);
+
+    box-shadow:
+
+        0 12px 35px rgba(18,53,31,.12);
+  animation:headerDrop .6s ease;
+
+}
+  .header-brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#12351f;
+
+    text-decoration:none;
+
+    font-weight:900;
+
+}
+
+.header-brand img{
+
+    width:38px;
+
+    height:38px;
+
+    object-fit:contain;
+
+}
+
+.header-brand span{
+
+    letter-spacing:.5px;
+
+}
+  .header-nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:28px;
+
+}
+
+.header-nav a{
+
+    color:#12351f;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    opacity:.8;
+
+    transition:.25s;
+
+}
+
+.header-nav a:hover{
+
+    opacity:1;
+
+    color:#1f6b3a;
+
+}
+  .header-cta{
+
+    padding:12px 22px;
+
+    border-radius:16px;
+
+    background:#12351f;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:800;
+
+    transition:.25s;
+
+}
+
+.header-cta:hover{
+
+    background:#1f6b3a;
+
+    transform:translateY(-2px);
+
+}
+  .glass-header:hover{
+
+    background:rgba(255,255,255,.25);
+
+    border-color:rgba(255,255,255,.55);
+
+    box-shadow:
+
+        0 18px 45px rgba(18,53,31,.18);
+
+}
+.hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+    min-height:85vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:linear-gradient(135deg,#0f2f1b,#1f6b3a);
+
+    color:#fff;
+
+    border-radius:34px;
+
+    padding:60px;
+
+    box-shadow:0 24px 80px rgba(18,53,31,.18);
+
+}
 .badge{display:inline-block;padding:10px 16px;border-radius:999px;background:#f5d66b;color:#12351f;font-weight:900;text-transform:uppercase;font-size:14px}
 h1{margin:22px 0 0;font-size:78px;line-height:.92;font-weight:900}
 h2{margin:0;font-size:42px}
@@ -172,6 +335,45 @@ h2{margin:0;font-size:42px}
   h2{font-size:32px}
 
   .free{font-size:22px}
+  .glass-header{
+
+    top:10px;
+
+    padding:10px 12px;
+
+    border-radius:20px;
+
+}
+
+.header-brand img{
+
+    width:34px;
+
+    height:34px;
+
+}
+
+.header-brand span{
+
+    font-size:13px;
+
+}
+
+.header-nav{
+
+    display:none;
+
+}
+
+.header-cta{
+
+    padding:10px 14px;
+
+    font-size:14px;
+
+    border-radius:14px;
+
+}
 
   .hero-logo{
 
@@ -307,6 +509,25 @@ h2{margin:0;font-size:42px}
   }
 
 }
+  @keyframes headerDrop{
+
+  from{
+
+    opacity:0;
+
+    transform:translateY(-20px);
+
+  }
+
+  to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+  }
+
+}
 
 /* ===== ANIMATIONS ===== */
 
@@ -429,7 +650,34 @@ h2{margin:0;font-size:42px}
 
 <main class="page">
 <div class="container">
+<header class="glass-header">
 
+  <a class="header-brand" href="#">
+
+    <img src="/images/crystal_logo.png" alt="CRYSTAL UNITED">
+
+    <span>CRYSTAL UNITED</span>
+
+  </a>
+
+  <nav class="header-nav">
+
+    <a href="#about">Про нас</a>
+
+    <a href="#gallery">Галерея</a>
+
+    <a href="#partners">Партнери</a>
+
+  </nav>
+
+  <a class="header-cta" href="https://t.me/crystal_united" target="_blank" rel="noopener noreferrer">
+
+    Записатися
+
+  </a>
+
+</header>
+  
 <section class="hero">
   <div class="hero-content">
     <div class="badge">Дитячий футбольний клуб</div>
@@ -473,7 +721,7 @@ h2{margin:0;font-size:42px}
   </div>
 </section>
 
-<section class="section reveal">
+<section class="section reveal" id="about">
   <h2>Про нас</h2>
   <p class="section-text">CRYSTAL UNITED — більше, ніж просто футбол ⚽</p>
   <p>Ми створили простір, де діти не лише вчаться грати у футбол, а й ростуть впевненими, дисциплінованими та дружніми особистостями.</p>
@@ -498,7 +746,7 @@ h2{margin:0;font-size:42px}
   </div>
 </section>
 
-<section class="section reveal">
+<section class="section reveal" id="gallery">
   <div class="badge">Галерея</div>
 
   <div class="gallery-wrap">
@@ -531,7 +779,7 @@ h2{margin:0;font-size:42px}
   </div>
 </footer>
 
-<section class="partners-strip reveal">
+<section class="partners-strip reveal" id="partners">
   <h3>Наші партнери</h3>
 
   <div class="partners-logos">
@@ -619,7 +867,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 >
 
-    <img src="/images/telegram.png" alt="Telegram">
+    <img src="/images/Telegram.png" alt="Telegram">
 
 </a>
   
