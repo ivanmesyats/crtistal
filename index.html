@@ -177,6 +177,122 @@ h2{margin:0;font-size:42px}
     height:70px;
   }
 }
+
+/* ===== ANIMATIONS ===== */
+
+.reveal{
+
+  opacity:0;
+
+  transform:translateY(34px);
+
+  transition:opacity .8s ease, transform .8s ease;
+
+}
+
+.reveal.show{
+
+  opacity:1;
+
+  transform:translateY(0);
+
+}
+
+.hero-content{
+
+  animation:heroIntro .9s ease both;
+
+}
+
+@keyframes heroIntro{
+
+  from{
+
+    opacity:0;
+
+    transform:translateY(24px);
+
+  }
+
+  to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+  }
+
+}
+
+.hero-logo{
+
+  animation:logoFloat 5s ease-in-out infinite;
+
+}
+
+@keyframes logoFloat{
+
+  0%,100%{transform:translateY(-50%) scale(1)}
+
+  50%{transform:translateY(-53%) scale(1.03)}
+
+}
+
+.actions a,
+
+.feature,
+
+.partner-logo-small,
+
+.photo img,
+
+.sound-btn{
+
+  transition:.25s ease;
+
+}
+
+.actions a:hover{
+
+  transform:translateY(-3px);
+
+  box-shadow:0 12px 28px rgba(245,214,107,.28);
+
+}
+
+.feature:hover{
+
+  transform:translateY(-8px);
+
+  box-shadow:0 18px 35px rgba(18,53,31,.12);
+
+}
+
+.partner-logo-small:hover{
+
+  transform:scale(1.06);
+
+  filter:brightness(1.05);
+
+}
+
+.photo:hover img{
+
+  transform:scale(1.08);
+
+}
+
+.video-box{
+
+  transition:.35s ease;
+
+}
+
+.video-box:hover{
+
+  transform:scale(.995);
+
+}
 </style>
 </head>
 <body>
@@ -203,7 +319,7 @@ h2{margin:0;font-size:42px}
   </div>
 </section>
 
-<section class="section video-section">
+<section class="section video-section reveal">
   <div class="badge">Відео</div>
   <h2>Рухаймося разом</h2>
   <p class="section-text">
@@ -227,7 +343,7 @@ h2{margin:0;font-size:42px}
   </div>
 </section>
 
-<section class="section">
+<section class="section reveal">
   <h2>Про нас</h2>
   <p class="section-text">CRYSTAL UNITED — більше, ніж просто футбол ⚽</p>
   <p>Ми створили простір, де діти не лише вчаться грати у футбол, а й ростуть впевненими, дисциплінованими та дружніми особистостями.</p>
@@ -252,7 +368,7 @@ h2{margin:0;font-size:42px}
   </div>
 </section>
 
-<section class="section">
+<section class="section reveal">
   <div class="badge">Галерея</div>
 
   <div class="gallery-wrap">
@@ -270,7 +386,7 @@ h2{margin:0;font-size:42px}
   </div>
 </section>
 
-<footer class="footer">
+<footer class="footer reveal">
   <div class="footer-inner">
     <div>
       <h2>CRYSTAL UNITED</h2>
@@ -285,7 +401,7 @@ h2{margin:0;font-size:42px}
   </div>
 </footer>
 
-<section class="partners-strip">
+<section class="partners-strip reveal">
   <h3>Наші партнери</h3>
 
   <div class="partners-logos">
@@ -307,23 +423,57 @@ h2{margin:0;font-size:42px}
 </main>
 
 <script>
+
 document.addEventListener('DOMContentLoaded', () => {
+
+  const items = document.querySelectorAll('.reveal');
+
+  const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+      if(entry.isIntersecting){
+
+        entry.target.classList.add('show');
+
+      }
+
+    });
+
+  }, {
+
+    threshold: 0.15
+
+  });
+
+  items.forEach(item => observer.observe(item));
+
   const video = document.getElementById('clubVideo');
+
   const btn = document.getElementById('soundBtn');
 
   function toggleSound() {
+
     video.muted = !video.muted;
+
     btn.textContent = video.muted ? '🔇' : '🔊';
+
     video.play();
+
   }
 
   btn.addEventListener('click', (e) => {
+
     e.stopPropagation();
+
     toggleSound();
+
   });
 
   video.addEventListener('click', toggleSound);
+
 });
+
 </script>
 
 </body>
