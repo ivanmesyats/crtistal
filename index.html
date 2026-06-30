@@ -135,47 +135,143 @@ h2{margin:0;font-size:42px}
 .partner-logo-small:hover{transform:scale(1.05)}
 
 @media(max-width:950px){
+
   .features{grid-template-columns:repeat(2,1fr)}
+
+}
+
+.floating-telegram{
+
+  display:none;
+
 }
 
 @media(max-width:650px){
+
   .page{padding:14px}
+
   .hero,.section,.footer{padding:28px}
+
   .features{grid-template-columns:1fr}
+
   .photo{width:300px;height:220px}
+
   h1{font-size:52px}
+
   h2{font-size:32px}
+
   .free{font-size:22px}
 
   .hero-logo{
+
     width:190px;
+
     height:190px;
+
     right:-30px;
+
     top:auto;
+
     bottom:20px;
+
     transform:none;
+
     opacity:.14;
+
+    animation:none;
+
   }
 
   .video-box{
+
     aspect-ratio:16/10;
+
     border-radius:18px;
+
   }
 
   .partners-strip{
+
     padding:28px;
+
     background-position:bottom right;
+
   }
 
   .partners-logos{
+
     justify-content:center;
+
     gap:24px;
+
   }
 
   .partner-logo-small{
+
     width:170px;
+
     height:70px;
+
   }
+
+  .floating-telegram{
+
+    display:flex;
+
+    position:fixed;
+
+    right:18px;
+
+    bottom:20px;
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:50%;
+
+    background:#2AABEE;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-shadow:0 15px 35px rgba(42,171,238,.45);
+
+    z-index:9999;
+
+    animation:telegramPulse 2s infinite;
+
+  }
+
+}
+
+@keyframes telegramPulse{
+
+  0%{
+
+    transform:scale(1);
+
+    box-shadow:0 0 0 0 rgba(42,171,238,.55);
+
+  }
+
+  70%{
+
+    transform:scale(1.08);
+
+    box-shadow:0 0 0 18px rgba(42,171,238,0);
+
+  }
+
+  100%{
+
+    transform:scale(1);
+
+    box-shadow:0 0 0 0 rgba(42,171,238,0);
+
+  }
+
 }
 
 /* ===== ANIMATIONS ===== */
@@ -475,6 +571,23 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 </script>
+<a
 
+    class="floating-telegram"
+
+    href="https://t.me/crystal_united"
+
+    target="_blank"
+
+    aria-label="Telegram"
+
+    style="color:#fff;font-size:34px;text-decoration:none;"
+
+>
+
+✈️
+
+</a>
+  
 </body>
 </html>
