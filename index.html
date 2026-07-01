@@ -184,18 +184,90 @@ body{margin:0;font-family:Arial,sans-serif;background:#f5f7ef;color:#12351f}
 
     inset:-120px;
 
-    background:
+ background:
 
-        radial-gradient(circle at 20% 30%, rgba(245,214,107,.18), transparent 38%),
+    linear-gradient(
 
-        radial-gradient(circle at 80% 20%, rgba(255,255,255,.10), transparent 35%),
+        125deg,
 
-        radial-gradient(circle at 60% 80%, rgba(255,255,255,.08), transparent 40%);
+        transparent 55%,
+
+        rgba(255,255,255,.035) 72%,
+
+        transparent 86%
+
+    ),
+
+    url("data:image/svg+xml,%3Csvg width='900' height='560' viewBox='0 0 900 560' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.16)' stroke-width='6'%3E%3Crect x='80' y='60' width='740' height='440'/%3E%3Cline x1='450' y1='60' x2='450' y2='500'/%3E%3Ccircle cx='450' cy='280' r='82'/%3E%3Crect x='80' y='180' width='120' height='200'/%3E%3Crect x='700' y='180' width='120' height='200'/%3E%3C/g%3E%3C/svg%3E"),
+
+    radial-gradient(circle at 78% 48%, rgba(245,214,107,.18), transparent 34%),
+
+    radial-gradient(circle at 20% 30%, rgba(245,214,107,.18), transparent 38%),
+
+    radial-gradient(circle at 80% 20%, rgba(255,255,255,.10), transparent 35%),
+
+    radial-gradient(circle at 60% 80%, rgba(255,255,255,.08), transparent 40%);
+    background-size:
+
+    cover,
+
+    760px auto,
+
+    auto,
+
+    auto,
+
+    auto,
+
+    auto;
+
+background-position:
+
+    center,
+
+    right -80px center,
+
+    center,
+
+    center,
+
+    center,
+
+    center;
+
+background-repeat:
+
+    no-repeat;
 
     z-index:0;
 
     pointer-events:none;
     animation:heroGlow 8s ease-in-out infinite alternate;
+
+}
+  .hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+
+        90deg,
+
+        rgba(8,25,14,.34) 0%,
+
+        rgba(8,25,14,.16) 36%,
+
+        transparent 68%
+
+    );
+
+    pointer-events:none;
+
+    z-index:1;
 
 }
 .badge{display:inline-block;padding:10px 16px;border-radius:999px;background:#f5d66b;color:#12351f;font-weight:900;text-transform:uppercase;font-size:14px}
